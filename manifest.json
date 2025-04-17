@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "考试酷助手",
+  "version": "0.1.0",
+  "description": "增强考试酷成绩页面，提供排序、筛选、重复姓名检查和批量导出功能。",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.examcoo.com/class/paper/viewexam/cid/*/tid/*/xid/*",
+        "https://www.examcoo.com/class/paper/listdetail/cid/*/purpose/*/tid/*/xid/*"
+      ],
+      "js": ["content_script.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "storage" 
+  ]
+}

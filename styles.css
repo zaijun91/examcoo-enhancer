@@ -1,0 +1,99 @@
+.hidden-by-script {
+    display: none !important;
+}
+
+.duplicate-highlight {
+    background-color: yellow !important;
+}
+
+.action-button {
+    margin-left: 5px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    /* 统一按钮样式 */
+    padding: 3px 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+.action-button:hover {
+    background-color: #e0e0e0;
+}
+
+.sort-indicator {
+    margin-left: 5px;
+    display: inline-block;
+    width: 1em;
+}
+
+/* 批量导出按钮的样式 */
+#batchExportButton {
+    margin: 0; /* Reset margin as it's inside the control panel now */
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #17a2b8;
+    background-color: #e2f7fa;
+    color: #0d6775;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px; /* Added for consistency */
+}
+#batchExportButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* 统一控制面板样式 */
+#examcooHelperControls {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased gap slightly */
+    align-items: center; /* 垂直居中对齐 */
+}
+#examcooHelperControls > div { /* 控制面板内的分组 */
+    display: flex;
+    gap: 8px; /* Increased gap slightly */
+    align-items: center;
+}
+#examcooHelperControls label {
+    margin-right: 5px;
+    font-weight: bold; /* Make labels bold */
+}
+#examcooHelperControls input[type="date"] {
+    padding: 4px 6px; /* Slightly larger padding */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#examcooHelperControls button { /* General button styling within controls */
+    padding: 4px 10px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px; /* Slightly smaller font */
+}
+#examcooHelperControls button:hover {
+    background-color: #ddd;
+}
+#examcooHelperControls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Specific overrides if needed, e.g., for the main export button */
+#examcooHelperControls #batchExportButton {
+     /* Keep its specific styles */
+    border: 1px solid #17a2b8;
+    background-color: #e2f7fa;
+    color: #0d6775;
+    font-weight: bold;
+    font-size: 14px;
+}
+#examcooHelperControls #batchExportButton:hover {
+    background-color: #cbeef3; /* Specific hover for export button */
+}
